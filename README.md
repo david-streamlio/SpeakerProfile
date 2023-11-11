@@ -16,7 +16,7 @@ on topics related to real-time data and messaging technologies.
 ***
 
 - Name: David Kjerrumgaard
-- Company: [StreamNative](https://streamnative.io/)
+- Company: [StreamNative](https://streamnative.io/people/david)
 - Job Title: Developer Advocate
 - [Twitter/X](https://twitter.com/DavidKjerrumga1): @DavidKjerrumga1
 - [LinkedIn](https://www.linkedin.com/in/davidkj/)
