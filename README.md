@@ -49,7 +49,7 @@ on topics related to real-time data and messaging technologies.
 - NDC London [2022](https://www.youtube.com/watch?v=sBbg0ow3hh0&pp=ygUMS2plcnJ1bWdhYXJk)
 - Pulsar Summit Asia ([2022](https://www.youtube.com/watch?v=MN2l1duMjeA&list=PLqRma1oIkcWgeNb3kgzqFyg5sywH8S4yy&index=34&pp=iAQB), [2022](https://www.youtube.com/watch?v=apY1Xd5JgkA&list=PLqRma1oIkcWgeNb3kgzqFyg5sywH8S4yy&index=35&pp=iAQB))
 - Pulsar Summit Europe (2021, [2023](https://streamnative.io/videos/pulsar-virtual-summit-europe-2023-build-ml-enhanced-event-streaming-apps-with-java-microservices), [2023](https://streamnative.io/videos/pulsar-virtual-summit-europe-2023-error-handling-patterns-in-pulsar))
-- Pulsar Summit North America [2022](https://streamnative.io/videos/pulsar-summit-san-francisco-2022-tech-deep-dive-message-redelivery-an-unexpected-journey), 2023
+- Pulsar Summit North America ([2020](https://www.youtube.com/watch?v=7wGIhLKnILs), [2022](https://streamnative.io/videos/pulsar-summit-san-francisco-2022-tech-deep-dive-message-redelivery-an-unexpected-journey), 2023
 - p99Conf [2023](https://www.p99conf.io/session/segment-based-storage-vs-partition-based-storage-which-is-better-for-real-time-data-streaming/)
 - ScyllaDB Summit [2023](https://www.scylladb.com/presentations/sink-your-teeth-into-streaming-at-any-scale/)
 
