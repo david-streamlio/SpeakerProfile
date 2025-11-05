@@ -1,5 +1,7 @@
 # Speaker Profile
 
+![DSS25465.jpg](images/DSS25465.jpg)
+
 I consider myself a globally recognized expert in the world of real-time data, messaging systems, and Big Data 
 technologies. I am also a committer on the Apache Pulsar project, having provided invaluable contributions to the 
 advancement of this groundbreaking event streaming platform over the past 7 years.
@@ -14,7 +16,6 @@ on topics related to real-time data and messaging technologies.
 
 ## Personal Information
 ***
-
 - Name: David Kjerrumgaard
 - Company: [StreamNative](https://streamnative.io/people/david)
 - Job Title: Developer Advocate
