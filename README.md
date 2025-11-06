@@ -42,7 +42,7 @@ on topics related to real-time data and messaging technologies.
 - Conf42 Machine Learning [2023](https://www.youtube.com/watch?v=0UMmAvQm_H8&pp=ygUMS2plcnJ1bWdhYXJk)
 - DataCon LA (2020, 2021, [2022](https://www.youtube.com/watch?v=w-KdQeLVLWY))
 - Data Days Austin 2018
-- Data Streaming Summit [2025](https://datastreaming-summit.org/event/data-streaming-sf-2025/schedule#)
+- Data Streaming Summit [2025](https://streamnative.io/videos/dss-san-francisco-2025-everything-you-wanted-from-broker-side-filtering-and-more-building-personalized-feeds-with-apache)
 - DataWorks Summit 2017
 - DeveloperWeek Austin 2021
 - Embedded Fest [2021](https://www.youtube.com/watch?v=o22U4DR8_ik&pp=ygUMS2plcnJ1bWdhYXJk)
