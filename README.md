@@ -37,7 +37,7 @@ on topics related to real-time data and messaging technologies.
 - AI DevWorld 2022
 - ApacheCon North America (2019, 2020, 2021, [2022](https://www.youtube.com/watch?v=x5OFvx_Ot5o), 2023)
 - ApacheCon Asia (2019, 2020, [2021](https://www.youtube.com/watch?v=neoEJXFChIY), [2022](https://www.youtube.com/watch?v=tRChbhHC5fs))
-- Current: The Next Generation of Kafka Summit ([2023](https://www.confluent.io/events/current/2023/introducing-oxia-a-scalable-zookeeper-alternative/), [2025](https://current.confluent.io/new-orleans/sessions#session-934959))
+- Current: The Next Generation of Kafka Summit ([2023](https://www.confluent.io/events/current/2023/introducing-oxia-a-scalable-zookeeper-alternative/), [2025](https://current.confluent.io/post-conference-videos-25/ursa-augment-your-lakehouse-with-kafka-compatible-data-streaming-capabilities-e-nola25))
 - Conf42 Golang [2023](https://www.youtube.com/watch?v=Qzq52ADcBD8&pp=ygUMS2plcnJ1bWdhYXJk)
 - Conf42 Machine Learning [2023](https://www.youtube.com/watch?v=0UMmAvQm_H8&pp=ygUMS2plcnJ1bWdhYXJk)
 - DataCon LA (2020, 2021, [2022](https://www.youtube.com/watch?v=w-KdQeLVLWY))
