@@ -43,6 +43,26 @@
   year: 2022
   videoUrl: https://www.youtube.com/watch?v=tRChbhHC5fs
 
+- id: berlin-buzzwords-2026
+  event: Berlin Buzzwords
+  year: 2026
+  title: "Dynamic Broker-Side Filtering for Kafka"
+  location: Berlin, Germany
+  videoUrl: https://2026.berlinbuzzwords.de/session/dynamic-broker-side-filtering-for-kafka/
+
+- id: budapest-data-ai-forum-2026
+  event: Budapest Data + AI Forum
+  year: 2026
+  title: "From Topics to Tables: Cataloging Streaming Data in the Iceberg Ecosystem"
+  location: Budapest, Hungary
+
+- id: current-london-2026
+  event: Current London
+  year: 2026
+  title: "From Data Pipelines to Context Streams: Building Infrastructure for the Agent Era"
+  location: London, UK
+  videoUrl: https://current.confluent.io/london/sessions#session-SESS-98
+
 - id: current-2023
   event: "Current: The Next Generation of Kafka Summit"
   year: 2023
@@ -100,6 +120,11 @@
 - id: flink-forward-seattle-2023
   event: Flink Forward Seattle
   year: 2023
+
+- id: iceberg-summit-2026
+  event: Iceberg Summit
+  year: 2026
+  title: "From Topics to Tables: Cataloging Streaming Data in the Iceberg Ecosystem"
 
 - id: jdevsummit-il-2022
   event: JDevSummit-IL
