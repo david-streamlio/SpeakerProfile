@@ -145,6 +145,12 @@
   title: "Deploying Machine Learning Models with Pulsar Functions"
   videoUrl: https://www.youtube.com/watch?v=sBbg0ow3hh0
 
+- id: open-source-analytics-2022
+  event: Open Source Analytics Conference
+  year: 2022
+  title: "Streaming Data Made Easy"
+  videoUrl: https://www.youtube.com/watch?v=C684XAivnqg
+
 - id: pulsar-summit-asia-2021
   event: Pulsar Summit Asia
   year: 2021
