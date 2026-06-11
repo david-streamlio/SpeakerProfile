@@ -5,6 +5,7 @@
 - id: ai-devworld-2022
   event: AI DevWorld
   year: 2022
+  title: "Deploying Machine Learning Models with Pulsar Functions"
 
 - id: apachecon-na-2019
   event: ApacheCon North America
@@ -111,6 +112,7 @@
 - id: developerweek-austin-2021
   event: DeveloperWeek Austin
   year: 2021
+  title: "Deploying Machine Learning Models with Pulsar Functions"
 
 - id: embedded-fest-2021
   event: Embedded Fest
@@ -129,20 +131,28 @@
 - id: jdevsummit-il-2022
   event: JDevSummit-IL
   year: 2022
+  title: "Deploying Machine Learning Models with Pulsar Functions"
   videoUrl: https://www.youtube.com/watch?v=afT6fYWdpBc
 
 - id: ndc-london-2022
   event: NDC London
   year: 2022
+  title: "Deploying Machine Learning Models with Pulsar Functions"
   videoUrl: https://www.youtube.com/watch?v=sBbg0ow3hh0
 
+- id: pulsar-summit-asia-2021
+  event: Pulsar Summit Asia
+  year: 2021
+  title: "Deploying Machine Learning Models with Pulsar Functions"
 - id: pulsar-summit-asia-2022-1
   event: Pulsar Summit Asia
   year: 2022
+  title: "Towards a ZooKeeper-less Pulsar, etcd, etcd, etcd."
   videoUrl: https://www.youtube.com/watch?v=MN2l1duMjeA
 - id: pulsar-summit-asia-2022-2
   event: Pulsar Summit Asia
   year: 2022
+  title: "Introducing TableView: Pulsar's Database Table Abstraction"
   videoUrl: https://www.youtube.com/watch?v=apY1Xd5JgkA
 
 - id: pulsar-summit-europe-2021
@@ -158,6 +168,10 @@
   year: 2023
   title: "Error Handling Patterns in Pulsar"
   videoUrl: https://streamnative.io/videos/pulsar-virtual-summit-europe-2023-error-handling-patterns-in-pulsar
+- id: pulsar-summit-europe-2023-3
+  event: Pulsar Summit Europe
+  year: 2023
+  title: "Building a Full Lifecycle Streaming Data Pipeline"
 
 - id: pulsar-summit-na-2020
   event: Pulsar Summit North America
@@ -171,6 +185,7 @@
 - id: pulsar-summit-na-2023
   event: Pulsar Summit North America
   year: 2023
+  title: "Introducing TableView: Pulsar's Database Table Abstraction"
 
 - id: p99conf-2023
   event: P99 CONF
@@ -183,3 +198,46 @@
   year: 2023
   title: "Sink Your Teeth Into Streaming at Any Scale"
   videoUrl: https://www.scylladb.com/presentations/sink-your-teeth-into-streaming-at-any-scale/
+
+# --- 2024 ---
+- id: data-saturday-phoenix-2024
+  event: Data Saturday Phoenix
+  year: 2024
+  title: "From Zero to Streaming Hero: A Quick Introduction to Stream Processing"
+  location: Phoenix, Arizona, USA
+- id: rta-summit-2024
+  event: Real-Time Analytics Summit
+  year: 2024
+  title: "Real-Time IoT Analytics with Apache Pulsar and Pinot"
+  location: San Jose, California, USA
+- id: community-over-code-eu-2024
+  event: Community Over Code EU
+  year: 2024
+  title: "Oxia: A Horizontally Scalable Alternative to Apache ZooKeeper"
+  location: Bratislava, Slovakia
+- id: pulsar-summit-europe-2024
+  event: Pulsar Summit Europe
+  year: 2024
+  title: "Building Scalable and Resilient Event-Driven Applications with Apache Pulsar"
+
+# --- additional 2025 sessions (from Sessionize) ---
+- id: data-streaming-summit-2025-crossroads
+  event: Data Streaming Summit
+  year: 2025
+  title: "Streaming at the Crossroads: Can One Architecture Rule Them All?"
+  location: San Francisco, California, USA
+- id: data-streaming-summit-2025-training
+  event: Data Streaming Summit
+  year: 2025
+  title: "Data Streaming Fundamentals Training"
+  location: San Francisco, California, USA
+- id: data-streaming-summit-virtual-2025
+  event: Data Streaming Summit (Virtual)
+  year: 2025
+  title: "Data Streaming Quality of Service for Kafka"
+  location: Virtual
+- id: apache-iceberg-bay-area-meetup-2025
+  event: Apache Iceberg Bay Area Meetup
+  year: 2025
+  title: "If We Can Standardize Tables, Why Not Streams?"
+  location: Bay Area, California, USA
