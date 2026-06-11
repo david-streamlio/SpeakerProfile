@@ -89,6 +89,11 @@
   title: "FLiPN Stack for Edge AI (Flink, NiFi, Pulsar)"
   videoUrl: https://www.youtube.com/watch?v=iw_F0nGanL0
 
+- id: datacon-la-2018
+  event: DataCon LA
+  year: 2018
+  title: "Distributed Crypto-Currency Trading with Apache Pulsar"
+  slidesUrl: https://www.slideshare.net/slideshow/distributed-cryptocurrency-trading-with-apache-pulsar-89005045/89005045
 - id: datacon-la-2020
   event: DataCon LA
   year: 2020
