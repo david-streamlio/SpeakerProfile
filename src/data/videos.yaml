@@ -1,6 +1,10 @@
 # Webinars and other video content. Add a new one by copying a block.
 # Fields: id, title, url (optional), description (optional), coHost (optional).
 
+- id: dds-pulsar-agentic-fleet-intelligence
+  title: "From Connected Vehicles to Intelligent Agents: DDS-Pulsar Bridges Enable Agentic Fleet Intelligence"
+  url: https://www.youtube.com/watch?v=aNK5RIIZ0fE
+
 - id: agentic-ai-real-time-streaming
   title: "Agentic AI Meets Real-Time Streaming: Introducing the StreamNative Remote MCP Server"
   description: >-
