@@ -1,16 +1,46 @@
 # Conferences for the "As seen at" social-proof wall on the home page.
-# Add `logo: /logos/<file>.svg` to a row once you drop logo files in public/logos/;
-# rows without a logo render as styled text. Order here = display order.
+# Rows with a `logo:` render the image (in a white chip); rows without render
+# as styled text. Order here = display order (logos first, then text-only).
 
 - name: ApacheCon
+  logo: /logos/apachecon.jpeg
 - name: Current
+  logo: /logos/current.jpg
 - name: Pulsar Summit
+  logo: /logos/pulsar-summit.jpg
 - name: Berlin Buzzwords
+  logo: /logos/berlin-buzzwords.jpeg
 - name: Data Streaming Summit
+  logo: /logos/data-streaming-summit.jpg
 - name: NDC London
+  logo: /logos/ndc-london.png
 - name: Community Over Code
+  logo: /logos/community-over-code.png
+- name: Flink Forward
+  logo: /logos/flink-forward.jpg
+- name: Iceberg Summit
+  logo: /logos/iceberg-summit.png
+- name: Conf42
+  logo: /logos/conf42.png
+- name: DataCon LA
+  logo: /logos/datacon-la.jpeg
+- name: DataWorks Summit
+  logo: /logos/dataworks-summit.jpg
+- name: DeveloperWeek Austin
+  logo: /logos/developerweek-austin.png
+- name: Embedded Fest
+  logo: /logos/embedded-fest.png
+- name: JDevSummit-IL
+  logo: /logos/jdevsummit-il.jpeg
+- name: Open Source Analytics Conference
+  logo: /logos/osacon.png
+- name: Budapest Data + AI Forum
+  logo: /logos/budapest-data-ai-forum.png
+- name: AI DevWorld
+  logo: /logos/ai-devworld.png
+- name: Real-Time Analytics Summit
+  logo: /logos/real-time-analytics-summit.png
+
+# Still need logos — render as text for now.
 - name: ScyllaDB Summit
 - name: P99 CONF
-- name: Flink Forward
-- name: Iceberg Summit
-- name: Real-Time Analytics Summit
