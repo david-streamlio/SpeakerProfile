@@ -7,15 +7,6 @@
   year: 2022
   title: "Deploying Machine Learning Models with Pulsar Functions"
 
-- id: apachecon-na-2019
-  event: ApacheCon North America
-  year: 2019
-- id: apachecon-na-2020
-  event: ApacheCon North America
-  year: 2020
-- id: apachecon-na-2021
-  event: ApacheCon North America
-  year: 2021
 - id: apachecon-na-2022
   event: ApacheCon North America
   year: 2022
@@ -91,12 +82,6 @@
   title: "Build ML-Enhanced Event Streaming Apps with Java Microservices"
   videoUrl: https://www.youtube.com/watch?v=0UMmAvQm_H8
 
-- id: datacon-la-2020
-  event: DataCon LA
-  year: 2020
-- id: datacon-la-2021
-  event: DataCon LA
-  year: 2021
 - id: datacon-la-2022
   event: DataCon LA
   year: 2022
