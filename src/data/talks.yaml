@@ -192,7 +192,7 @@
   event: P99 CONF
   year: 2023
   title: "Segment-Based Storage vs Partition-Based Storage: Which Is Better for Real-Time Data Streaming?"
-  videoUrl: https://www.p99conf.io/session/segment-based-storage-vs-partition-based-storage-which-is-better-for-real-time-data-streaming/
+  videoUrl: https://www.youtube.com/watch?v=mUgTPsjBG_A
 
 - id: scylladb-summit-2023
   event: ScyllaDB Summit
