@@ -116,6 +116,7 @@
 - id: flink-forward-seattle-2023
   event: Flink Forward Seattle
   year: 2023
+  title: "Unifying the Power of Real-Time: Building an Integrated Data Streaming Platform with Apache Pulsar and Apache Flink"
 
 - id: iceberg-summit-2026
   event: Iceberg Summit
