@@ -81,6 +81,11 @@
   year: 2023
   title: "Build ML-Enhanced Event Streaming Apps with Java Microservices"
   videoUrl: https://www.youtube.com/watch?v=0UMmAvQm_H8
+- id: conf42-iot-2023
+  event: Conf42 IoT
+  year: 2023
+  title: "FLiPN Stack for Edge AI (Flink, NiFi, Pulsar)"
+  videoUrl: https://www.youtube.com/watch?v=iw_F0nGanL0
 
 - id: datacon-la-2022
   event: DataCon LA
