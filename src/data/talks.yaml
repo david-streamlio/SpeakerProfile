@@ -19,11 +19,13 @@
 - id: apachecon-na-2022
   event: ApacheCon North America
   year: 2022
-  title: "When Failure Is Not an Option"
-  videoUrl: https://www.youtube.com/watch?v=x5OFvx_Ot5o
+  title: "Introducing TableView: Pulsar's Database Table Abstraction"
+  videoUrl: https://www.youtube.com/watch?v=tRChbhHC5fs
 - id: apachecon-na-2023
-  event: ApacheCon North America
+  event: Community Over Code North America
   year: 2023
+  title: "Unlocking the Power of Multi-Protocol Messaging with Apache Pulsar"
+  videoUrl: https://www.youtube.com/watch?v=5LWxPj2I7XI
 
 - id: apachecon-asia-2019
   event: ApacheCon Asia
@@ -44,8 +46,8 @@
 - id: apachecon-asia-2022
   event: ApacheCon Asia
   year: 2022
-  title: "Introducing TableView: Pulsar's Database Table Abstraction"
-  videoUrl: https://www.youtube.com/watch?v=tRChbhHC5fs
+  title: "When Failure Is Not an Option"
+  videoUrl: https://www.youtube.com/watch?v=x5OFvx_Ot5o
 
 - id: berlin-buzzwords-2026
   event: Berlin Buzzwords
