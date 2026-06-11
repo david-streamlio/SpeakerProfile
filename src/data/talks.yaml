@@ -111,6 +111,7 @@
 - id: dataworks-summit-2017
   event: DataWorks Summit
   year: 2017
+  title: "Building Scalable, Secure, and Production-Ready Data Pipelines Using Apache NiFi"
 
 - id: developerweek-austin-2021
   event: DeveloperWeek Austin
