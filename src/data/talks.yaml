@@ -87,6 +87,11 @@
   title: "FLiPN Stack for Edge AI (Flink, NiFi, Pulsar)"
   videoUrl: https://www.youtube.com/watch?v=iw_F0nGanL0
 
+- id: datacon-la-2020
+  event: DataCon LA
+  year: 2020
+  title: "Pulsar Functions Deep Dive"
+  videoUrl: https://www.youtube.com/watch?v=_EX_KMuum_U
 - id: datacon-la-2022
   event: DataCon LA
   year: 2022
