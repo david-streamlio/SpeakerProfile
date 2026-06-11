@@ -1,0 +1,104 @@
+# Featured GitHub repositories, grouped by category.
+# Add a repo by copying a block. `category` controls which section it appears in
+# (section order is defined in src/pages/projects.astro).
+
+# --- Pulsar in Action (book) ---
+- id: pulsar-in-action
+  name: pulsar-in-action
+  description: >-
+    The official code repository for the "Pulsar in Action" book (Manning).
+  url: https://github.com/david-streamlio/pulsar-in-action
+  language: Java
+  stars: 48
+  category: Pulsar in Action
+
+- id: gottaeat
+  name: GottaEat
+  description: >-
+    The fictitious "GottaEat" food-delivery application used throughout
+    "Pulsar in Action" to demonstrate real-world streaming patterns.
+  url: https://github.com/david-streamlio/GottaEat
+  language: Java
+  stars: 19
+  category: Pulsar in Action
+
+- id: pulsar-in-action-go
+  name: pulsar-in-action-go
+  description: Go examples accompanying "Pulsar in Action."
+  url: https://github.com/david-streamlio/pulsar-in-action-go
+  language: Go
+  stars: 2
+  category: Pulsar in Action
+
+- id: pulsar-in-action-python
+  name: pulsar-in-action-python
+  description: Python examples accompanying "Pulsar in Action."
+  url: https://github.com/david-streamlio/pulsar-in-action-python
+  language: Python
+  stars: 5
+  category: Pulsar in Action
+
+# --- Workshops & Talks ---
+- id: zero-to-hero-workshop
+  name: zero-to-hero-workshop
+  description: A hands-on workshop for building stream-processing applications.
+  url: https://github.com/david-streamlio/zero-to-hero-workshop
+  language: Java
+  stars: 1
+  category: Workshops & Talks
+
+- id: zero-to-hero
+  name: zero-to-hero
+  description: Companion code for the "From Zero to Streaming Hero" conference talk.
+  url: https://github.com/david-streamlio/zero-to-hero
+  language: Dockerfile
+  stars: 1
+  category: Workshops & Talks
+
+# --- Open-Source Projects ---
+- id: pulsar-nifi-bundle
+  name: pulsar-nifi-bundle
+  description: Apache NiFi processors for reading from and writing to Apache Pulsar.
+  url: https://github.com/david-streamlio/pulsar-nifi-bundle
+  language: Java
+  stars: 19
+  category: Open-Source Projects
+
+- id: error-handling-in-pulsar
+  name: error-handling-in-pulsar
+  description: >-
+    A framework demonstrating the behavior of various error-handling patterns in
+    Apache Pulsar.
+  url: https://github.com/david-streamlio/error-handling-in-pulsar
+  language: Java
+  stars: 1
+  category: Open-Source Projects
+
+- id: table-view-demo
+  name: table-view-demo
+  description: A collection of demonstrations of Pulsar's TableView API.
+  url: https://github.com/david-streamlio/table-view-demo
+  language: Java
+  stars: 2
+  category: Open-Source Projects
+
+- id: pulsar-priority-consumer
+  name: pulsar-priority-consumer
+  description: >-
+    A decorator for the Pulsar Consumer that prioritizes messages based on their
+    contents and/or properties.
+  url: https://github.com/david-streamlio/pulsar-priority-consumer
+  language: Java
+  stars: 0
+  category: Open-Source Projects
+
+# --- Talk Demos ---
+- id: broker-side-filtering-function
+  name: broker-side-filtering-function
+  description: >-
+    A broker-side message filtering function for Apache Pulsar — the companion
+    demo to recent talks on building personalized feeds.
+  url: https://github.com/david-streamlio/broker-side-filtering-function
+  language: Java
+  stars: 0
+  category: Talk Demos
