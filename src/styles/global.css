@@ -18,6 +18,7 @@
   --color-accent-400: #38bdf8;
   --color-accent-500: #0ea5e9;
   --color-accent-600: #0284c7;
+  --color-accent-700: #0369a1;
 }
 
 html {
@@ -103,7 +104,7 @@ a {
   @apply my-4 leading-relaxed;
 }
 .prose-content :where(a) {
-  @apply text-brand-600 underline underline-offset-2 hover:text-brand-700 dark:text-brand-500;
+  @apply text-accent-600 underline underline-offset-2 hover:text-accent-700 dark:text-accent-400;
 }
 .prose-content :where(ul) {
   @apply my-4 list-disc space-y-1 pl-6;
