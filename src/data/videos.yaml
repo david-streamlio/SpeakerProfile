@@ -49,9 +49,6 @@
 - id: pulsar-geo-replication-patterns
   title: Pulsar Geo-Replication Patterns
   url: https://www.youtube.com/watch?v=6BVzW1GV7hU
-- id: event-sourcing-with-pulsar
-  title: How to Build an Event Sourcing Application with Apache Pulsar
-  url: https://www.youtube.com/watch?v=PL3StEmWM3o
 - id: three-ways-sql-in-pulsar
   title: Three Ways to Implement SQL in Pulsar
   url: https://www.youtube.com/watch?v=sJB0Fwxy2ck
