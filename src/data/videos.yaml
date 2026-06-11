@@ -1,4 +1,26 @@
 # Webinars and other video content. Add a new one by copying a block.
+# Fields: id, title, url (optional), description (optional), coHost (optional).
+
+- id: agentic-ai-real-time-streaming
+  title: "Agentic AI Meets Real-Time Streaming: Introducing the StreamNative Remote MCP Server"
+  description: >-
+    Covering the StreamNative Remote MCP Server for integrating AI agents with
+    streaming platforms.
+  coHost: Kundan Vyas
+  url: https://www.youtube.com/watch?v=OmHCbeoHhPg
+
+- id: cost-effective-kafka-strategies
+  title: "Cost-Effective Kafka Strategies"
+  description: >-
+    Expert advice on reducing operational overhead, streamlining infrastructure,
+    and maximizing efficiency.
+  url: https://www.linkedin.com/posts/streamnative_kafka-datastreaming-costreduction-activity-7251645757886251008-r0Kr/
+
+- id: building-event-driven-apps
+  title: "Building Event-Driven Apps with Apache Pulsar"
+  description: >-
+    A deep dive into building event-sourcing architectures using Apache Pulsar.
+  url: https://streamnative.io/webinars/how-to-build-an-event-sourcing-app-with-apache-pulsar
 
 - id: pulsar-in-action-book-launch
   title: Pulsar in Action Book Launch

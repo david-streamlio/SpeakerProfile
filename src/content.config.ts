@@ -17,7 +17,9 @@ const videos = defineCollection({
   loader: file("src/data/videos.yaml"),
   schema: z.object({
     title: z.string(),
-    url: z.string().url(),
+    url: z.string().url().optional(),
+    description: z.string().optional(),
+    coHost: z.string().optional(),
   }),
 });
 
