@@ -226,6 +226,7 @@
   event: Pulsar Summit Europe
   year: 2024
   title: "Building Scalable and Resilient Event-Driven Applications with Apache Pulsar"
+  videoUrl: https://www.youtube.com/watch?v=nzc6JZScyiE
 
 # --- additional 2025 sessions (from Sessionize) ---
 - id: data-streaming-summit-2025-crossroads
