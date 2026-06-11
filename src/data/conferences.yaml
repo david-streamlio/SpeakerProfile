@@ -40,7 +40,7 @@
   logo: /logos/ai-devworld.png
 - name: Real-Time Analytics Summit
   logo: /logos/real-time-analytics-summit.png
-
-# Still need logos — render as text for now.
 - name: ScyllaDB Summit
+  logo: /logos/scylladb-summit.jpg
 - name: P99 CONF
+  logo: /logos/p99-conf.png
