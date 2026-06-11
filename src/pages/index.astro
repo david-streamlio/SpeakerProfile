@@ -111,11 +111,11 @@ const stats = [
             conferences.map(
               (c: { name: string; logo?: string }) =>
                 c.logo ? (
-                  <li class="flex h-12 items-center justify-center rounded-lg bg-white px-3 shadow-sm grayscale transition hover:grayscale-0">
+                  <li class="flex h-16 items-center justify-center rounded-xl bg-white px-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
                     <img
                       src={c.logo}
                       alt={c.name}
-                      class="max-h-8 w-auto max-w-[120px] object-contain"
+                      class="max-h-12 w-auto max-w-[170px] object-contain"
                       loading="lazy"
                     />
                   </li>
