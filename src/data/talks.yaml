@@ -7,11 +7,12 @@
   year: 2022
   title: "Deploying Machine Learning Models with Pulsar Functions"
 
-- id: apachecon-na-2022
-  event: ApacheCon North America
+- id: apachecon-asia-2022-tableview
+  event: ApacheCon Asia
   year: 2022
   title: "Introducing TableView: Pulsar's Database Table Abstraction"
   videoUrl: https://www.youtube.com/watch?v=tRChbhHC5fs
+  slidesUrl: https://www.slideshare.net/slideshow/tableviewapacheconasia2022pptx/252392965
 - id: apachecon-na-2023
   event: Community Over Code North America
   year: 2023
