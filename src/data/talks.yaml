@@ -7,32 +7,30 @@
   year: 2022
   title: "Deploying Machine Learning Models with Pulsar Functions"
 
-- id: apachecon-na-2019
-  event: ApacheCon North America
-  year: 2019
-- id: apachecon-na-2020
-  event: ApacheCon North America
-  year: 2020
-- id: apachecon-na-2021
-  event: ApacheCon North America
-  year: 2021
-- id: apachecon-na-2022
-  event: ApacheCon North America
+- id: apachecon-asia-2022-tableview
+  event: ApacheCon Asia
   year: 2022
-  videoUrl: https://www.youtube.com/watch?v=x5OFvx_Ot5o
+  title: "Introducing TableView: Pulsar's Database Table Abstraction"
+  videoUrl: https://www.youtube.com/watch?v=tRChbhHC5fs
+  slidesUrl: https://www.slideshare.net/slideshow/tableviewapacheconasia2022pptx/252392965
 - id: apachecon-na-2023
-  event: ApacheCon North America
+  event: Community Over Code North America
   year: 2023
+  title: "Unlocking the Power of Multi-Protocol Messaging with Apache Pulsar"
+  videoUrl: https://www.youtube.com/watch?v=5LWxPj2I7XI
 
 - id: apachecon-asia-2019
   event: ApacheCon Asia
   year: 2019
+  display: false
 - id: apachecon-asia-2020
   event: ApacheCon Asia
   year: 2020
+  display: false
 - id: apachecon-asia-2021-1
   event: ApacheCon Asia
   year: 2021
+  title: "Real-Time Machine Learning with Pulsar Functions"
   videoUrl: https://www.youtube.com/watch?v=neoEJXFChIY
 - id: apachecon-asia-2021-2
   event: ApacheCon Asia
@@ -42,14 +40,16 @@
 - id: apachecon-asia-2022
   event: ApacheCon Asia
   year: 2022
-  videoUrl: https://www.youtube.com/watch?v=tRChbhHC5fs
+  title: "When Failure Is Not an Option"
+  videoUrl: https://www.youtube.com/watch?v=x5OFvx_Ot5o
+  slidesUrl: https://www.slideshare.net/slideshow/failoverapacheconasia2022pptx/252392983
 
 - id: berlin-buzzwords-2026
   event: Berlin Buzzwords
   year: 2026
   title: "Dynamic Broker-Side Filtering for Kafka"
   location: Berlin, Germany
-  videoUrl: https://2026.berlinbuzzwords.de/session/dynamic-broker-side-filtering-for-kafka/
+  videoUrl: https://www.youtube.com/watch?v=Ren63EVC0gc
 
 - id: budapest-data-ai-forum-2026
   event: Budapest Data + AI Forum
@@ -78,36 +78,50 @@
 - id: conf42-golang-2023
   event: Conf42 Golang
   year: 2023
+  title: "Let's Go Build Cloud-Native Pulsar Apps with Go"
   videoUrl: https://www.youtube.com/watch?v=Qzq52ADcBD8
 - id: conf42-ml-2023
   event: Conf42 Machine Learning
   year: 2023
+  title: "Build ML-Enhanced Event Streaming Apps with Java Microservices"
   videoUrl: https://www.youtube.com/watch?v=0UMmAvQm_H8
+- id: conf42-iot-2023
+  event: Conf42 IoT
+  year: 2023
+  title: "FLiPN Stack for Edge AI (Flink, NiFi, Pulsar)"
+  videoUrl: https://www.youtube.com/watch?v=iw_F0nGanL0
 
+- id: datacon-la-2018
+  event: DataCon LA
+  year: 2018
+  title: "Distributed Crypto-Currency Trading with Apache Pulsar"
+  slidesUrl: https://www.slideshare.net/slideshow/distributed-cryptocurrency-trading-with-apache-pulsar-89005045/89005045
 - id: datacon-la-2020
   event: DataCon LA
   year: 2020
-- id: datacon-la-2021
-  event: DataCon LA
-  year: 2021
+  title: "Pulsar Functions Deep Dive"
+  videoUrl: https://www.youtube.com/watch?v=_EX_KMuum_U
 - id: datacon-la-2022
   event: DataCon LA
   year: 2022
+  title: "Event Sourcing with Apache Pulsar and Apache Quarkus"
   videoUrl: https://www.youtube.com/watch?v=w-KdQeLVLWY
 
 - id: data-days-austin-2018
   event: Data Days Austin
   year: 2018
+  display: false
 
 - id: data-streaming-summit-2025
   event: Data Streaming Summit
   year: 2025
   title: "Everything You Wanted From Broker-Side Filtering and More: Building Personalized Feeds with Apache Pulsar"
-  videoUrl: https://streamnative.io/videos/dss-san-francisco-2025-everything-you-wanted-from-broker-side-filtering-and-more-building-personalized-feeds-with-apache
+  videoUrl: https://www.youtube.com/watch?v=nCr0t9yTGiY
 
 - id: dataworks-summit-2017
   event: DataWorks Summit
   year: 2017
+  title: "Building Scalable, Secure, and Production-Ready Data Pipelines Using Apache NiFi"
 
 - id: developerweek-austin-2021
   event: DeveloperWeek Austin
@@ -117,11 +131,14 @@
 - id: embedded-fest-2021
   event: Embedded Fest
   year: 2021
+  title: "Using Apache Pulsar to Provide Real-Time Analytics on the Edge"
   videoUrl: https://www.youtube.com/watch?v=o22U4DR8_ik
 
 - id: flink-forward-seattle-2023
   event: Flink Forward Seattle
   year: 2023
+  title: "Unifying the Power of Real-Time: Building an Integrated Data Streaming Platform with Apache Pulsar and Apache Flink"
+  videoUrl: https://www.youtube.com/watch?v=oKEAZ73i4zE
 
 - id: iceberg-summit-2026
   event: Iceberg Summit
@@ -140,10 +157,17 @@
   title: "Deploying Machine Learning Models with Pulsar Functions"
   videoUrl: https://www.youtube.com/watch?v=sBbg0ow3hh0
 
+- id: open-source-analytics-2022
+  event: Open Source Analytics Conference
+  year: 2022
+  title: "Streaming Data Made Easy"
+  videoUrl: https://www.youtube.com/watch?v=C684XAivnqg
+
 - id: pulsar-summit-asia-2021
   event: Pulsar Summit Asia
   year: 2021
   title: "Deploying Machine Learning Models with Pulsar Functions"
+  slidesUrl: https://www.slideshare.net/slideshow/deploying-machine-learning-models-with-pulsar-functions-pulsar-summit-asia-2021/251255941
 - id: pulsar-summit-asia-2022-1
   event: Pulsar Summit Asia
   year: 2022
@@ -158,6 +182,7 @@
 - id: pulsar-summit-europe-2021
   event: Pulsar Summit Europe
   year: 2021
+  display: false
 - id: pulsar-summit-europe-2023-1
   event: Pulsar Summit Europe
   year: 2023
@@ -176,12 +201,20 @@
 - id: pulsar-summit-na-2020
   event: Pulsar Summit North America
   year: 2020
+  title: "Using Apache Pulsar to Provide Real-Time IoT Analytics on the Edge"
   videoUrl: https://www.youtube.com/watch?v=7wGIhLKnILs
+  slidesUrl: https://www.slideshare.net/slideshow/using-apache-pulsar-to-provide-realtime-iot-analytics-on-the-edge/148878715
+- id: pulsar-summit-na-2021
+  event: Pulsar Summit North America
+  year: 2021
+  title: "Real-Time Machine Learning with Pulsar Functions"
+  slidesUrl: https://www.slideshare.net/slideshow/realtime-machine-learning-with-pulsar-functions-pulsar-summit-na-2021/249453218
 - id: pulsar-summit-na-2022
   event: Pulsar Summit North America
   year: 2022
   title: "Tech Deep Dive: Message Redelivery — An Unexpected Journey"
   videoUrl: https://streamnative.io/videos/pulsar-summit-san-francisco-2022-tech-deep-dive-message-redelivery-an-unexpected-journey
+  slidesUrl: https://www.slideshare.net/slideshow/message-redelivery-an-unexpected-journey-pulsar-summit-sf-2022/254530862
 - id: pulsar-summit-na-2023
   event: Pulsar Summit North America
   year: 2023
@@ -191,13 +224,15 @@
   event: P99 CONF
   year: 2023
   title: "Segment-Based Storage vs Partition-Based Storage: Which Is Better for Real-Time Data Streaming?"
-  videoUrl: https://www.p99conf.io/session/segment-based-storage-vs-partition-based-storage-which-is-better-for-real-time-data-streaming/
+  videoUrl: https://www.youtube.com/watch?v=mUgTPsjBG_A
+  slidesUrl: https://www.slideshare.net/slideshow/segment-based-storage-vs-partition-based-storage-which-is-better-for-real-time-data-streaming/269886660
 
 - id: scylladb-summit-2023
   event: ScyllaDB Summit
   year: 2023
   title: "Sink Your Teeth Into Streaming at Any Scale"
   videoUrl: https://www.scylladb.com/presentations/sink-your-teeth-into-streaming-at-any-scale/
+  slidesUrl: https://www.slideshare.net/slideshow/sink-your-teeth-into-streaming-at-any-scale-255605108/255605108
 
 # --- 2024 ---
 - id: data-saturday-phoenix-2024
@@ -215,10 +250,12 @@
   year: 2024
   title: "Oxia: A Horizontally Scalable Alternative to Apache ZooKeeper"
   location: Bratislava, Slovakia
+  videoUrl: https://www.youtube.com/watch?v=E30ASaHihlM
 - id: pulsar-summit-europe-2024
   event: Pulsar Summit Europe
   year: 2024
   title: "Building Scalable and Resilient Event-Driven Applications with Apache Pulsar"
+  videoUrl: https://www.youtube.com/watch?v=nzc6JZScyiE
 
 # --- additional 2025 sessions (from Sessionize) ---
 - id: data-streaming-summit-2025-crossroads
@@ -241,3 +278,4 @@
   year: 2025
   title: "If We Can Standardize Tables, Why Not Streams?"
   location: Bay Area, California, USA
+  videoUrl: https://www.youtube.com/watch?v=TSOUNMyuvLk

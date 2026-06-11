@@ -4,6 +4,7 @@ import profileData from "../data/profile.yaml";
 const nav = [
   { label: "Home", href: "/" },
   { label: "Talks", href: "/talks/" },
+  { label: "Slides", href: "/slides/" },
   { label: "Projects", href: "/projects/" },
   { label: "Videos", href: "/videos/" },
   { label: "Podcasts", href: "/podcasts/" },
@@ -13,6 +14,10 @@ const nav = [
 const path = Astro.url.pathname;
 const isActive = (href: string) =>
   href === "/" ? path === "/" : path.startsWith(href);
+
+const sessionize = profileData.social.find(
+  (s: { label: string }) => s.label === "Sessionize",
+)?.url;
 ---
 
 <header
@@ -21,7 +26,7 @@ const isActive = (href: string) =>
   <div
     class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6"
   >
-    <a href="/" class="text-lg font-extrabold tracking-tight">
+    <a href="/" class="font-display text-lg font-bold tracking-tight">
       {profileData.name}
     </a>
 
@@ -33,7 +38,7 @@ const isActive = (href: string) =>
             class:list={[
               "rounded-md px-2.5 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800",
               isActive(item.href)
-                ? "text-brand-600 dark:text-brand-500"
+                ? "text-accent-600 dark:text-accent-400"
                 : "text-slate-600 dark:text-slate-300",
             ]}
           >
@@ -71,6 +76,18 @@ const isActive = (href: string) =>
           ></path></svg
         >
       </button>
+      {
+        sessionize && (
+          <a
+            href={sessionize}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ml-1 hidden rounded-lg bg-accent-500 px-3.5 py-1.5 text-sm font-semibold text-white shadow-sm transition hover:bg-accent-600 sm:inline-block"
+          >
+            Invite me
+          </a>
+        )
+      }
     </nav>
   </div>
 </header>

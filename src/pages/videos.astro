@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHeader from "../components/PageHeader.astro";
 import { getCollection } from "astro:content";
 
 const videos = await getCollection("videos");
@@ -9,15 +10,14 @@ const videos = await getCollection("videos");
   title="Videos & Webinars"
   description="Webinars and technical video content on Apache Pulsar and event streaming."
 >
-  <section class="mx-auto max-w-4xl px-4 py-12 sm:px-6">
-    <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-      Videos &amp; Webinars
-    </h1>
-    <p class="mt-3 max-w-prose text-slate-600 dark:text-slate-300">
-      Deep dives, tutorials, and webinars on Apache Pulsar and event streaming.
-    </p>
+  <PageHeader
+    eyebrow="Watch"
+    title="Videos & Webinars"
+    description="Deep dives, tutorials, and webinars on Apache Pulsar and event streaming."
+  />
 
-    <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+  <section class="mx-auto max-w-4xl px-4 py-12 sm:px-6">
+    <ul class="grid gap-4 sm:grid-cols-2">
       {
         videos.map((video) => {
           const card =
@@ -28,7 +28,7 @@ const videos = await getCollection("videos");
                 class:list={[
                   "font-medium",
                   video.data.url &&
-                    "group-hover:text-brand-600 dark:group-hover:text-brand-500",
+                    "group-hover:text-accent-600 dark:group-hover:text-accent-400",
                 ]}
               >
                 {video.data.title}
@@ -57,9 +57,9 @@ const videos = await getCollection("videos");
                   href={video.data.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class={`${card} hover:border-brand-500 hover:shadow-md`}
+                  class={`${card} hover:border-accent-400 hover:shadow-md`}
                 >
-                  <span class="mt-0.5 text-brand-600 dark:text-brand-500">▶</span>
+                  <span class="mt-0.5 text-accent-600 dark:text-accent-400">▶</span>
                   {Body}
                 </a>
               ) : (

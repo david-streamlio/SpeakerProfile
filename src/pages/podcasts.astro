@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHeader from "../components/PageHeader.astro";
 import { getCollection } from "astro:content";
 
 const podcasts = await getCollection("podcasts");
@@ -9,13 +10,14 @@ const podcasts = await getCollection("podcasts");
   title="Podcasts"
   description="Podcast appearances on real-time data and streaming systems."
 >
-  <section class="mx-auto max-w-4xl px-4 py-12 sm:px-6">
-    <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Podcasts</h1>
-    <p class="mt-3 max-w-prose text-slate-600 dark:text-slate-300">
-      Conversations on real-time data, messaging, and streaming systems.
-    </p>
+  <PageHeader
+    eyebrow="Listen"
+    title="Podcasts"
+    description="Conversations on real-time data, messaging, and streaming systems."
+  />
 
-    <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+  <section class="mx-auto max-w-4xl px-4 py-12 sm:px-6">
+    <ul class="grid gap-3 sm:grid-cols-2">
       {
         podcasts.map((podcast) => (
           <li>
@@ -23,10 +25,10 @@ const podcasts = await getCollection("podcasts");
               href={podcast.data.url}
               target="_blank"
               rel="noopener noreferrer"
-              class="group flex h-full items-start gap-3 rounded-xl border border-slate-200 p-4 hover:border-brand-500 hover:shadow-md dark:border-slate-800"
+              class="group flex h-full items-start gap-3 rounded-xl border border-slate-200 p-4 hover:border-accent-400 hover:shadow-md dark:border-slate-800"
             >
-              <span class="mt-0.5 text-brand-600 dark:text-brand-500">🎙</span>
-              <span class="font-medium group-hover:text-brand-600 dark:group-hover:text-brand-500">
+              <span class="mt-0.5 text-accent-600 dark:text-accent-400">🎙</span>
+              <span class="font-medium group-hover:text-accent-600 dark:group-hover:text-accent-400">
                 {podcast.data.title}
               </span>
             </a>

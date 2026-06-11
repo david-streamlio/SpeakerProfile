@@ -6,6 +6,38 @@ company:
 tagline: >-
   Globally recognized expert in real-time data, messaging systems, and Big Data
   technologies.
+
+# Hero positioning statement (the big headline + supporting line).
+positioning:
+  headline: Real-time data, decoded.
+  subhead: >-
+    I help engineering teams design streaming systems that react in
+    milliseconds — and I make the hard parts make sense, on stage and in code.
+
+# A talk recording to feature on the home page (YouTube watch URL).
+featuredVideo:
+  url: https://www.youtube.com/watch?v=sBbg0ow3hh0
+  title: "Deploying Machine Learning Models with Pulsar Functions — NDC London"
+
+# Signature speaking topics (drafted from talk history — edit freely).
+topics:
+  - title: Real-Time, Event-Driven Architecture
+    description: >-
+      Designing systems that react in milliseconds — event sourcing, broker-side
+      filtering, and the patterns that make streaming reliable in production.
+  - title: Apache Pulsar in Production
+    description: >-
+      From core concepts to advanced patterns, drawn from "Pulsar in Action" and
+      seven years as a project committer.
+  - title: Cost-Efficient Streaming at Scale
+    description: >-
+      Cutting the operational overhead and runaway bills of Kafka and Pulsar
+      without sacrificing throughput or reliability.
+  - title: Streaming Infrastructure for the AI Era
+    description: >-
+      Turning data pipelines into context streams — feeding real-time, personalized
+      data to AI agents and the systems that serve them.
+
 bio:
   - >-
     I consider myself a globally recognized expert in the world of real-time
@@ -13,6 +45,12 @@ bio:
     the Apache Pulsar project, having provided invaluable contributions to the
     advancement of this groundbreaking event streaming platform over the past
     seven years.
+  - >-
+    My work traces back to the early days of the big-data ecosystem, where I
+    helped organizations move away from traditional batch processing toward
+    reliable edge-to-core streaming analytics — drawing on real-world
+    architectural patterns proven while engineering solutions for Fortune 500
+    companies.
   - >-
     As an accomplished author, I have penned the highly regarded book "Pulsar in
     Action," which serves as a definitive guide for those seeking to master the
