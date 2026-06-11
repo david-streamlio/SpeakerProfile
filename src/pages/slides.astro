@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHeader from "../components/PageHeader.astro";
+import { getCollection } from "astro:content";
+
+// The Slides page is a view of every talk that has an attached slide deck.
+const decks = (await getCollection("talks"))
+  .filter((t) => t.data.slidesUrl)
+  .sort((a, b) => {
+    if (b.data.year !== a.data.year) return b.data.year - a.data.year;
+    return a.data.event.localeCompare(b.data.event);
+  });
+---
+
+<BaseLayout
+  title="Slides"
+  description="Slide decks from David Kjerrumgaard's conference talks and workshops."
+>
+  <PageHeader
+    eyebrow="Decks"
+    title="Slides"
+    description={`${decks.length} slide decks from my conference talks and workshops.`}
+  />
+
+  <section class="mx-auto max-w-4xl px-4 py-12 sm:px-6">
+    <ul class="grid gap-4 sm:grid-cols-2">
+      {
+        decks.map((deck) => (
+          <li>
+            <a
+              href={deck.data.slidesUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex h-full flex-col rounded-xl border border-slate-200 p-5 hover:border-accent-400 hover:shadow-md dark:border-slate-800"
+            >
+              <span class="text-2xl text-accent-500" aria-hidden="true">
+                ▤
+              </span>
+              <span class="mt-3 font-medium group-hover:text-accent-600 dark:group-hover:text-accent-400">
+                {deck.data.title ?? deck.data.event}
+              </span>
+              <span class="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                {deck.data.event} · {deck.data.year}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

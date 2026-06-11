@@ -39,6 +39,7 @@
   year: 2022
   title: "When Failure Is Not an Option"
   videoUrl: https://www.youtube.com/watch?v=x5OFvx_Ot5o
+  slidesUrl: https://www.slideshare.net/slideshow/failoverapacheconasia2022pptx/252392983
 
 - id: berlin-buzzwords-2026
   event: Berlin Buzzwords
@@ -157,6 +158,7 @@
   event: Pulsar Summit Asia
   year: 2021
   title: "Deploying Machine Learning Models with Pulsar Functions"
+  slidesUrl: https://www.slideshare.net/slideshow/deploying-machine-learning-models-with-pulsar-functions-pulsar-summit-asia-2021/251255941
 - id: pulsar-summit-asia-2022-1
   event: Pulsar Summit Asia
   year: 2022
@@ -191,11 +193,18 @@
   year: 2020
   title: "Using Apache Pulsar to Provide Real-Time IoT Analytics on the Edge"
   videoUrl: https://www.youtube.com/watch?v=7wGIhLKnILs
+  slidesUrl: https://www.slideshare.net/slideshow/using-apache-pulsar-to-provide-realtime-iot-analytics-on-the-edge/148878715
+- id: pulsar-summit-na-2021
+  event: Pulsar Summit North America
+  year: 2021
+  title: "Real-Time Machine Learning with Pulsar Functions"
+  slidesUrl: https://www.slideshare.net/slideshow/realtime-machine-learning-with-pulsar-functions-pulsar-summit-na-2021/249453218
 - id: pulsar-summit-na-2022
   event: Pulsar Summit North America
   year: 2022
   title: "Tech Deep Dive: Message Redelivery — An Unexpected Journey"
   videoUrl: https://streamnative.io/videos/pulsar-summit-san-francisco-2022-tech-deep-dive-message-redelivery-an-unexpected-journey
+  slidesUrl: https://www.slideshare.net/slideshow/message-redelivery-an-unexpected-journey-pulsar-summit-sf-2022/254530862
 - id: pulsar-summit-na-2023
   event: Pulsar Summit North America
   year: 2023
@@ -206,12 +215,14 @@
   year: 2023
   title: "Segment-Based Storage vs Partition-Based Storage: Which Is Better for Real-Time Data Streaming?"
   videoUrl: https://www.youtube.com/watch?v=mUgTPsjBG_A
+  slidesUrl: https://www.slideshare.net/slideshow/segment-based-storage-vs-partition-based-storage-which-is-better-for-real-time-data-streaming/269886660
 
 - id: scylladb-summit-2023
   event: ScyllaDB Summit
   year: 2023
   title: "Sink Your Teeth Into Streaming at Any Scale"
   videoUrl: https://www.scylladb.com/presentations/sink-your-teeth-into-streaming-at-any-scale/
+  slidesUrl: https://www.slideshare.net/slideshow/sink-your-teeth-into-streaming-at-any-scale-255605108/255605108
 
 # --- 2024 ---
 - id: data-saturday-phoenix-2024
