@@ -1,0 +1,160 @@
+# Each entry is one conference appearance.
+# Fields: id (unique), event, year, title (optional), videoUrl (optional).
+# Add a new talk by copying a block and filling in the fields.
+
+- id: ai-devworld-2022
+  event: AI DevWorld
+  year: 2022
+
+- id: apachecon-na-2019
+  event: ApacheCon North America
+  year: 2019
+- id: apachecon-na-2020
+  event: ApacheCon North America
+  year: 2020
+- id: apachecon-na-2021
+  event: ApacheCon North America
+  year: 2021
+- id: apachecon-na-2022
+  event: ApacheCon North America
+  year: 2022
+  videoUrl: https://www.youtube.com/watch?v=x5OFvx_Ot5o
+- id: apachecon-na-2023
+  event: ApacheCon North America
+  year: 2023
+
+- id: apachecon-asia-2019
+  event: ApacheCon Asia
+  year: 2019
+- id: apachecon-asia-2020
+  event: ApacheCon Asia
+  year: 2020
+- id: apachecon-asia-2021-1
+  event: ApacheCon Asia
+  year: 2021
+  videoUrl: https://www.youtube.com/watch?v=neoEJXFChIY
+- id: apachecon-asia-2021-2
+  event: ApacheCon Asia
+  year: 2021
+  title: "Real-Time Machine Learning with Pulsar Functions"
+  videoUrl: https://www.youtube.com/watch?v=MpvEq5Qm13Q
+- id: apachecon-asia-2022
+  event: ApacheCon Asia
+  year: 2022
+  videoUrl: https://www.youtube.com/watch?v=tRChbhHC5fs
+
+- id: current-2023
+  event: "Current: The Next Generation of Kafka Summit"
+  year: 2023
+  title: "Introducing Oxia: A Scalable ZooKeeper Alternative"
+  videoUrl: https://www.confluent.io/events/current/2023/introducing-oxia-a-scalable-zookeeper-alternative/
+- id: current-2025
+  event: "Current: The Next Generation of Kafka Summit"
+  year: 2025
+  title: "Ursa: Augment Your Lakehouse with Kafka-Compatible Data Streaming Capabilities"
+  videoUrl: https://current.confluent.io/post-conference-videos-25/ursa-augment-your-lakehouse-with-kafka-compatible-data-streaming-capabilities-e-nola25
+
+- id: conf42-golang-2023
+  event: Conf42 Golang
+  year: 2023
+  videoUrl: https://www.youtube.com/watch?v=Qzq52ADcBD8
+- id: conf42-ml-2023
+  event: Conf42 Machine Learning
+  year: 2023
+  videoUrl: https://www.youtube.com/watch?v=0UMmAvQm_H8
+
+- id: datacon-la-2020
+  event: DataCon LA
+  year: 2020
+- id: datacon-la-2021
+  event: DataCon LA
+  year: 2021
+- id: datacon-la-2022
+  event: DataCon LA
+  year: 2022
+  videoUrl: https://www.youtube.com/watch?v=w-KdQeLVLWY
+
+- id: data-days-austin-2018
+  event: Data Days Austin
+  year: 2018
+
+- id: data-streaming-summit-2025
+  event: Data Streaming Summit
+  year: 2025
+  title: "Everything You Wanted From Broker-Side Filtering and More: Building Personalized Feeds with Apache Pulsar"
+  videoUrl: https://streamnative.io/videos/dss-san-francisco-2025-everything-you-wanted-from-broker-side-filtering-and-more-building-personalized-feeds-with-apache
+
+- id: dataworks-summit-2017
+  event: DataWorks Summit
+  year: 2017
+
+- id: developerweek-austin-2021
+  event: DeveloperWeek Austin
+  year: 2021
+
+- id: embedded-fest-2021
+  event: Embedded Fest
+  year: 2021
+  videoUrl: https://www.youtube.com/watch?v=o22U4DR8_ik
+
+- id: flink-forward-seattle-2023
+  event: Flink Forward Seattle
+  year: 2023
+
+- id: jdevsummit-il-2022
+  event: JDevSummit-IL
+  year: 2022
+  videoUrl: https://www.youtube.com/watch?v=afT6fYWdpBc
+
+- id: ndc-london-2022
+  event: NDC London
+  year: 2022
+  videoUrl: https://www.youtube.com/watch?v=sBbg0ow3hh0
+
+- id: pulsar-summit-asia-2022-1
+  event: Pulsar Summit Asia
+  year: 2022
+  videoUrl: https://www.youtube.com/watch?v=MN2l1duMjeA
+- id: pulsar-summit-asia-2022-2
+  event: Pulsar Summit Asia
+  year: 2022
+  videoUrl: https://www.youtube.com/watch?v=apY1Xd5JgkA
+
+- id: pulsar-summit-europe-2021
+  event: Pulsar Summit Europe
+  year: 2021
+- id: pulsar-summit-europe-2023-1
+  event: Pulsar Summit Europe
+  year: 2023
+  title: "Build ML-Enhanced Event Streaming Apps With Java Microservices"
+  videoUrl: https://streamnative.io/videos/pulsar-virtual-summit-europe-2023-build-ml-enhanced-event-streaming-apps-with-java-microservices
+- id: pulsar-summit-europe-2023-2
+  event: Pulsar Summit Europe
+  year: 2023
+  title: "Error Handling Patterns in Pulsar"
+  videoUrl: https://streamnative.io/videos/pulsar-virtual-summit-europe-2023-error-handling-patterns-in-pulsar
+
+- id: pulsar-summit-na-2020
+  event: Pulsar Summit North America
+  year: 2020
+  videoUrl: https://www.youtube.com/watch?v=7wGIhLKnILs
+- id: pulsar-summit-na-2022
+  event: Pulsar Summit North America
+  year: 2022
+  title: "Tech Deep Dive: Message Redelivery — An Unexpected Journey"
+  videoUrl: https://streamnative.io/videos/pulsar-summit-san-francisco-2022-tech-deep-dive-message-redelivery-an-unexpected-journey
+- id: pulsar-summit-na-2023
+  event: Pulsar Summit North America
+  year: 2023
+
+- id: p99conf-2023
+  event: P99 CONF
+  year: 2023
+  title: "Segment-Based Storage vs Partition-Based Storage: Which Is Better for Real-Time Data Streaming?"
+  videoUrl: https://www.p99conf.io/session/segment-based-storage-vs-partition-based-storage-which-is-better-for-real-time-data-streaming/
+
+- id: scylladb-summit-2023
+  event: ScyllaDB Summit
+  year: 2023
+  title: "Sink Your Teeth Into Streaming at Any Scale"
+  videoUrl: https://www.scylladb.com/presentations/sink-your-teeth-into-streaming-at-any-scale/

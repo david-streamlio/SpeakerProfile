@@ -1,0 +1,59 @@
+name: David Kjerrumgaard
+title: Developer Advocate
+company:
+  name: StreamNative
+  url: https://streamnative.io/people/david
+tagline: >-
+  Globally recognized expert in real-time data, messaging systems, and Big Data
+  technologies.
+bio:
+  - >-
+    I consider myself a globally recognized expert in the world of real-time
+    data, messaging systems, and Big Data technologies. I am also a committer on
+    the Apache Pulsar project, having provided invaluable contributions to the
+    advancement of this groundbreaking event streaming platform over the past
+    seven years.
+  - >-
+    As an accomplished author, I have penned the highly regarded book "Pulsar in
+    Action," which serves as a definitive guide for those seeking to master the
+    intricacies of Apache Pulsar. I am also a co-author of "Practical Hive,"
+    adding to my list of notable publications.
+  - >-
+    With numerous speaking engagements around the world, my influence and
+    expertise extend far beyond my written work. This site captures some of the
+    captivating and informative talks I have delivered across the globe as an
+    authority on topics related to real-time data and messaging technologies.
+
+availableFor:
+  - Talks
+  - Workshops
+  - Panels
+  - Podcasts
+  - Video Series
+
+social:
+  - label: Twitter/X
+    handle: "@DavidKjerrumga1"
+    url: https://twitter.com/DavidKjerrumga1
+  - label: LinkedIn
+    handle: davidkj
+    url: https://www.linkedin.com/in/davidkj/
+  - label: Sessionize
+    handle: David-Kjerrumgaard
+    url: https://sessionize.com/David-Kjerrumgaard/
+
+books:
+  - title: Pulsar in Action
+    publisher: Manning
+    url: https://www.manning.com/books/apache-pulsar-in-action
+    role: Author
+    description: >-
+      A definitive, hands-on guide to mastering Apache Pulsar, from core concepts
+      to building production event-streaming applications.
+  - title: Practical Hive
+    publisher: Apress / Springer
+    url: https://link.springer.com/book/10.1007/978-1-4842-0271-5
+    role: Co-author
+    description: >-
+      A practical guide to Apache Hive for data warehousing and large-scale SQL
+      analytics on Hadoop.
