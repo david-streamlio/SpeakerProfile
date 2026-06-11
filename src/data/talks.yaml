@@ -19,6 +19,7 @@
 - id: apachecon-na-2022
   event: ApacheCon North America
   year: 2022
+  title: "When Failure Is Not an Option"
   videoUrl: https://www.youtube.com/watch?v=x5OFvx_Ot5o
 - id: apachecon-na-2023
   event: ApacheCon North America
@@ -33,6 +34,7 @@
 - id: apachecon-asia-2021-1
   event: ApacheCon Asia
   year: 2021
+  title: "Real-Time Machine Learning with Pulsar Functions"
   videoUrl: https://www.youtube.com/watch?v=neoEJXFChIY
 - id: apachecon-asia-2021-2
   event: ApacheCon Asia
@@ -42,6 +44,7 @@
 - id: apachecon-asia-2022
   event: ApacheCon Asia
   year: 2022
+  title: "Introducing TableView: Pulsar's Database Table Abstraction"
   videoUrl: https://www.youtube.com/watch?v=tRChbhHC5fs
 
 - id: berlin-buzzwords-2026
@@ -78,10 +81,12 @@
 - id: conf42-golang-2023
   event: Conf42 Golang
   year: 2023
+  title: "Let's Go Build Cloud-Native Pulsar Apps with Go"
   videoUrl: https://www.youtube.com/watch?v=Qzq52ADcBD8
 - id: conf42-ml-2023
   event: Conf42 Machine Learning
   year: 2023
+  title: "Build ML-Enhanced Event Streaming Apps with Java Microservices"
   videoUrl: https://www.youtube.com/watch?v=0UMmAvQm_H8
 
 - id: datacon-la-2020
@@ -93,6 +98,7 @@
 - id: datacon-la-2022
   event: DataCon LA
   year: 2022
+  title: "Event Sourcing with Apache Pulsar and Apache Quarkus"
   videoUrl: https://www.youtube.com/watch?v=w-KdQeLVLWY
 
 - id: data-days-austin-2018
@@ -117,6 +123,7 @@
 - id: embedded-fest-2021
   event: Embedded Fest
   year: 2021
+  title: "Using Apache Pulsar to Provide Real-Time Analytics on the Edge"
   videoUrl: https://www.youtube.com/watch?v=o22U4DR8_ik
 
 - id: flink-forward-seattle-2023
@@ -176,6 +183,7 @@
 - id: pulsar-summit-na-2020
   event: Pulsar Summit North America
   year: 2020
+  title: "Using Apache Pulsar to Provide Real-Time IoT Analytics on the Edge"
   videoUrl: https://www.youtube.com/watch?v=7wGIhLKnILs
 - id: pulsar-summit-na-2022
   event: Pulsar Summit North America
