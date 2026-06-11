@@ -31,6 +31,18 @@ const podcasts = defineCollection({
   }),
 });
 
+const projects = defineCollection({
+  loader: file("src/data/projects.yaml"),
+  schema: z.object({
+    name: z.string(),
+    description: z.string(),
+    url: z.string().url(),
+    language: z.string().optional(),
+    stars: z.number().optional(),
+    category: z.string(),
+  }),
+});
+
 const blog = defineCollection({
   loader: glob({ base: "src/content/blog", pattern: "**/*.md" }),
   schema: z.object({
@@ -43,4 +55,4 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { talks, videos, podcasts, blog };
+export const collections = { talks, videos, podcasts, projects, blog };

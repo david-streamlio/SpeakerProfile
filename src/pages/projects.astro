@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
+
+// Section order on the page.
+const categoryOrder = [
+  "Pulsar in Action",
+  "Workshops & Talks",
+  "Open-Source Projects",
+  "Talk Demos",
+];
+
+const grouped = categoryOrder
+  .map((category) => ({
+    category,
+    repos: projects.filter((p) => p.data.category === category),
+  }))
+  .filter((g) => g.repos.length > 0);
+
+// A few common language dot colors; fallback is a neutral gray.
+const langColor: Record<string, string> = {
+  Java: "#b07219",
+  Go: "#00add8",
+  Python: "#3572a5",
+  Dockerfile: "#384d54",
+  "C#": "#178600",
+  HTML: "#e34c26",
+};
+---
+
+<BaseLayout
+  title="Projects"
+  description="Open-source repositories, book code, and workshop materials from David Kjerrumgaard's GitHub."
+>
+  <section class="mx-auto max-w-4xl px-4 py-12 sm:px-6">
+    <h1 class="text-4xl tracking-tight sm:text-5xl">Projects</h1>
+    <p class="mt-4 max-w-prose text-lg text-slate-600 dark:text-slate-300">
+      Open-source code from my books, talks, and workshops — plus a few original
+      Apache Pulsar projects. Everything here is on
+      <a
+        href="https://github.com/david-streamlio"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-medium text-brand-600 underline underline-offset-2 hover:text-brand-700 dark:text-brand-500"
+        >GitHub</a
+      >.
+    </p>
+
+    {
+      grouped.map((group) => (
+        <div class="mt-12">
+          <h2 class="text-2xl">{group.category}</h2>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2">
+            {group.repos.map((repo) => (
+              <a
+                href={repo.data.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex h-full flex-col rounded-xl border border-slate-200 p-5 hover:border-brand-500 hover:shadow-md dark:border-slate-800"
+              >
+                <div class="flex items-start gap-2">
+                  <svg
+                    class="mt-0.5 h-5 w-5 shrink-0 text-slate-400 dark:text-slate-500"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                  <span class="font-display font-semibold group-hover:text-brand-600 dark:group-hover:text-brand-500">
+                    {repo.data.name}
+                  </span>
+                </div>
+                <p class="mt-2 flex-1 text-sm text-slate-600 dark:text-slate-300">
+                  {repo.data.description}
+                </p>
+                <div class="mt-4 flex items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
+                  {repo.data.language && (
+                    <span class="inline-flex items-center gap-1.5">
+                      <span
+                        class="h-2.5 w-2.5 rounded-full"
+                        style={`background:${langColor[repo.data.language] ?? "#94a3b8"}`}
+                      />
+                      {repo.data.language}
+                    </span>
+                  )}
+                  {repo.data.stars ? (
+                    <span class="inline-flex items-center gap-1">★ {repo.data.stars}</span>
+                  ) : null}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </section>
+</BaseLayout>
