@@ -1,0 +1,16 @@
+# Conferences for the "As seen at" social-proof wall on the home page.
+# Add `logo: /logos/<file>.svg` to a row once you drop logo files in public/logos/;
+# rows without a logo render as styled text. Order here = display order.
+
+- name: ApacheCon
+- name: Current
+- name: Pulsar Summit
+- name: Berlin Buzzwords
+- name: Data Streaming Summit
+- name: NDC London
+- name: Community Over Code
+- name: ScyllaDB Summit
+- name: P99 CONF
+- name: Flink Forward
+- name: Iceberg Summit
+- name: Real-Time Analytics Summit
