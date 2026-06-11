@@ -1,0 +1,168 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import profileData from "../data/profile.yaml";
+import { hero } from "../data/images";
+import { getCollection } from "astro:content";
+
+const talks = await getCollection("talks");
+const events = new Set(talks.map((t) => t.data.event));
+const recentBlog = (await getCollection("blog"))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 2);
+---
+
+<BaseLayout>
+  <!-- Hero -->
+  <section class="border-b border-slate-200 dark:border-slate-800">
+    <div
+      class="mx-auto grid max-w-5xl items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[1.2fr_1fr] md:py-16"
+    >
+      <div>
+        <p
+          class="mb-3 text-sm font-semibold tracking-wide text-brand-600 uppercase dark:text-brand-500"
+        >
+          {profileData.title} · {profileData.company.name}
+        </p>
+        <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+          {profileData.name}
+        </h1>
+        <p
+          class="mt-4 max-w-prose text-lg text-slate-600 dark:text-slate-300"
+        >
+          {profileData.tagline}
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a
+            href="/talks/"
+            class="rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
+          >
+            See my talks
+          </a>
+          <a
+            href={profileData.social.find((s: { label: string }) => s.label === "Sessionize")?.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800"
+          >
+            Invite me to speak
+          </a>
+        </div>
+        <p class="mt-6 text-sm text-slate-500 dark:text-slate-400">
+          {talks.length} appearances across {events.size} conferences worldwide.
+        </p>
+      </div>
+      <div>
+        <Image
+          src={hero}
+          alt={`${profileData.name} speaking`}
+          class="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg"
+          widths={[480, 800, 1200]}
+          sizes="(min-width: 768px) 40vw, 100vw"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio -->
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h2 class="text-2xl font-bold">About</h2>
+    <div class="prose-content mt-4">
+      {profileData.bio.map((p: string) => <p>{p}</p>)}
+    </div>
+  </section>
+
+  <!-- Books -->
+  <section class="mx-auto max-w-5xl px-4 pb-12 sm:px-6">
+    <h2 class="text-2xl font-bold">Books</h2>
+    <div class="mt-6 grid gap-6 sm:grid-cols-2">
+      {
+        profileData.books.map(
+          (book: {
+            title: string;
+            publisher: string;
+            url: string;
+            role: string;
+            description: string;
+          }) => (
+            <a
+              href={book.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group rounded-xl border border-slate-200 p-6 hover:border-brand-500 hover:shadow-md dark:border-slate-800"
+            >
+              <p class="text-xs font-semibold tracking-wide text-brand-600 uppercase dark:text-brand-500">
+                {book.role} · {book.publisher}
+              </p>
+              <h3 class="mt-1 text-lg font-bold group-hover:text-brand-600 dark:group-hover:text-brand-500">
+                {book.title}
+              </h3>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                {book.description}
+              </p>
+            </a>
+          ),
+        )
+      }
+    </div>
+  </section>
+
+  <!-- Available for -->
+  <section class="mx-auto max-w-5xl px-4 pb-12 sm:px-6">
+    <h2 class="text-2xl font-bold">Available for</h2>
+    <div class="mt-4 flex flex-wrap gap-2">
+      {
+        profileData.availableFor.map((item: string) => (
+          <span class="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium dark:bg-slate-800">
+            {item}
+          </span>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Recent writing -->
+  {
+    recentBlog.length > 0 && (
+      <section class="mx-auto max-w-5xl px-4 pb-16 sm:px-6">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-bold">From the blog</h2>
+          <a
+            href="/blog/"
+            class="text-sm font-semibold text-brand-600 hover:text-brand-700 dark:text-brand-500"
+          >
+            All posts →
+          </a>
+        </div>
+        <div class="mt-6 grid gap-6 sm:grid-cols-2">
+          {recentBlog.map((post) => (
+            <a
+              href={`/blog/${post.id}/`}
+              class="group rounded-xl border border-slate-200 p-6 hover:border-brand-500 hover:shadow-md dark:border-slate-800"
+            >
+              <time
+                datetime={post.data.pubDate.toISOString()}
+                class="text-xs text-slate-500 dark:text-slate-400"
+              >
+                {post.data.pubDate.toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+              <h3 class="mt-1 text-lg font-bold group-hover:text-brand-600 dark:group-hover:text-brand-500">
+                {post.data.title}
+              </h3>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                {post.data.description}
+              </p>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>

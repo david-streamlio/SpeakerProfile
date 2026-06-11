@@ -1,0 +1,89 @@
+---
+import "../styles/global.css";
+import { getImage } from "astro:assets";
+import profileData from "../data/profile.yaml";
+import { hero } from "../data/images";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description = profileData.tagline } = Astro.props;
+
+const siteTitle = `${profileData.name} — ${profileData.title}`;
+const pageTitle = title ? `${title} · ${profileData.name}` : siteTitle;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+
+// Optimized Open Graph card generated from the hero photo (1200×630).
+const og = await getImage({
+  src: hero,
+  width: 1200,
+  height: 630,
+  format: "jpeg",
+  quality: 80,
+});
+const ogImage = new URL(og.src, Astro.site);
+
+// JSON-LD Person schema for rich search results
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: profileData.name,
+  jobTitle: profileData.title,
+  worksFor: { "@type": "Organization", name: profileData.company.name },
+  url: Astro.site?.href,
+  sameAs: profileData.social.map((s: { url: string }) => s.url),
+};
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(personSchema)}
+    />
+    <script is:inline>
+      // Apply saved/system theme before paint to avoid a flash
+      const theme =
+        localStorage.getItem("theme") ??
+        (window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light");
+      document.documentElement.classList.toggle("dark", theme === "dark");
+    </script>
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,38 @@
+# Webinars and other video content. Add a new one by copying a block.
+
+- id: pulsar-in-action-book-launch
+  title: Pulsar in Action Book Launch
+  url: https://www.youtube.com/watch?v=NDaahGOI7NQ
+- id: pulsar-api-design
+  title: Apache Pulsar's API Design
+  url: https://www.youtube.com/watch?v=Ll4kqOZxHEw
+- id: pulsar-consumer-architecture
+  title: Apache Pulsar Consumer Architecture
+  url: https://www.youtube.com/watch?v=1C9rB9bKuZQ
+- id: pulsar-producer-architecture
+  title: Apache Pulsar Producer Architecture
+  url: https://www.youtube.com/watch?v=iM1FPRduVSw
+- id: deploying-pulsar-functions
+  title: Deploying Pulsar Functions
+  url: https://www.youtube.com/watch?v=RKY2uHRLLQI
+- id: pulsar-geo-replication-4-steps
+  title: Enable Pulsar Geo-Replication in 4 Steps
+  url: https://www.youtube.com/watch?v=x7yBJT6_yBA
+- id: packaging-pulsar-functions
+  title: Packaging Pulsar Functions
+  url: https://www.youtube.com/watch?v=Td01e_bq5QI
+- id: messaging-vs-streaming
+  title: How Are Messaging and Streaming Different?
+  url: https://www.youtube.com/watch?v=uGuyj12HQro
+- id: pulsar-geo-replication-patterns
+  title: Pulsar Geo-Replication Patterns
+  url: https://www.youtube.com/watch?v=6BVzW1GV7hU
+- id: event-sourcing-with-pulsar
+  title: How to Build an Event Sourcing Application with Apache Pulsar
+  url: https://www.youtube.com/watch?v=PL3StEmWM3o
+- id: three-ways-sql-in-pulsar
+  title: Three Ways to Implement SQL in Pulsar
+  url: https://www.youtube.com/watch?v=sJB0Fwxy2ck
+- id: event-driven-microservices-pulsar-functions
+  title: Developing Event-Driven Microservices Using Pulsar Functions
+  url: https://www.youtube.com/watch?v=hI1Y_qMilsA
