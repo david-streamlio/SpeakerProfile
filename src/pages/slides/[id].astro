@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const talks = await getCollection("talks");
+  return talks
+    .filter((t) => t.data.deckUrl)
+    .map((t) => ({ params: { id: t.id }, props: { talk: t } }));
+}
+
+const { talk } = Astro.props;
+const heading = talk.data.title ?? talk.data.event;
+---
+
+<BaseLayout
+  title={`Slides — ${heading}`}
+  description={`Slides for "${heading}" (${talk.data.event}, ${talk.data.year}).`}
+>
+  <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+    <a
+      href="/slides/"
+      class="text-sm font-semibold text-accent-600 hover:text-accent-700 dark:text-accent-400"
+      >← All slides</a
+    >
+    <div class="mt-4 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h1 class="text-3xl sm:text-4xl">{heading}</h1>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">
+          {talk.data.event} · {talk.data.year}
+        </p>
+      </div>
+      <a
+        href={talk.data.deckUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="rounded-lg bg-accent-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-accent-400"
+      >
+        Present fullscreen ↗
+      </a>
+    </div>
+
+    <div
+      class="mt-6 overflow-hidden rounded-2xl shadow-xl ring-1 ring-slate-200 dark:ring-slate-800"
+    >
+      <div class="aspect-video">
+        <iframe
+          src={talk.data.deckUrl}
+          title={`Slides: ${heading}`}
+          class="h-full w-full"
+          loading="lazy"
+          allow="fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    {
+      talk.data.videoUrl && (
+        <p class="mt-6 text-sm text-slate-500 dark:text-slate-400">
+          Prefer to watch?{" "}
+          <a
+            href={talk.data.videoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-semibold text-accent-600 hover:text-accent-700 dark:text-accent-400"
+          >
+            View the recording ↗
+          </a>
+        </p>
+      )
+    }
+  </section>
+</BaseLayout>

@@ -10,6 +10,9 @@ const talks = defineCollection({
     location: z.string().optional(),
     videoUrl: z.string().url().optional(),
     slidesUrl: z.string().url().optional(),
+    // An embeddable web deck (e.g. decks.streamnative.io) shown in an inline
+    // viewer at /slides/<id>/. Use slidesUrl instead for link-out decks.
+    deckUrl: z.string().url().optional(),
     // true (default) = shown in lists. false = counted in totals but hidden.
     display: z.boolean().default(true),
   }),
