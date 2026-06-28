@@ -10,6 +10,8 @@ const talks = defineCollection({
     location: z.string().optional(),
     videoUrl: z.string().url().optional(),
     slidesUrl: z.string().url().optional(),
+    // Link to the talk's source-code repo (its README is the landing page).
+    repoUrl: z.string().url().optional(),
     // true (default) = shown in lists. false = counted in totals but hidden.
     display: z.boolean().default(true),
   }),

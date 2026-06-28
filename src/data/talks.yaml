@@ -51,6 +51,7 @@
   location: Berlin, Germany
   videoUrl: https://www.youtube.com/watch?v=Ren63EVC0gc
   slidesUrl: https://streaming-expert.com/talks/slides/broker-side-filter-for-kafka/
+  repoUrl: https://github.com/david-streamlio/broker-side-filtering-function
 
 - id: budapest-data-ai-forum-2026
   event: Budapest Data + AI Forum
