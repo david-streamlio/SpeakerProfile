@@ -50,6 +50,7 @@
   title: "Dynamic Broker-Side Filtering for Kafka"
   location: Berlin, Germany
   videoUrl: https://www.youtube.com/watch?v=Ren63EVC0gc
+  slidesUrl: https://streaming-expert.com/talks/slides/broker-side-filter-for-kafka/
   repoUrl: https://github.com/david-streamlio/broker-side-filtering-function
 
 - id: budapest-data-ai-forum-2026
@@ -64,6 +65,7 @@
   title: "From Data Pipelines to Context Streams: Building Infrastructure for the Agent Era"
   location: London, UK
   videoUrl: https://current.confluent.io/london/sessions#session-SESS-98
+  slidesUrl: https://streaming-expert.com/talks/slides/context-streams/
 
 - id: current-2023
   event: "Current: The Next Generation of Kafka Summit"
