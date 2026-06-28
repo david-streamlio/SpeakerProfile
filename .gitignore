@@ -6,6 +6,10 @@
 node_modules/
 dist/
 .astro/
+
+# Decks pulled in at build time by CI (from the private david-decks repo)
+public/talks/slides/
+.decks/
 .DS_Store
 npm-debug.log*
 
