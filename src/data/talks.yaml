@@ -57,6 +57,7 @@
   year: 2026
   title: "From Topics to Tables: Cataloging Streaming Data in the Iceberg Ecosystem"
   location: Budapest, Hungary
+  slidesUrl: https://streaming-expert.com/talks/slides/from-topics-to-tables-budapest/
 
 - id: current-london-2026
   event: Current London
