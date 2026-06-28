@@ -21,6 +21,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Checkout decks (private)
+        uses: actions/checkout@v4
+        with:
+          repository: david-streamlio/david-decks
+          ssh-key: ${{ secrets.DECKS_DEPLOY_KEY }}
+          path: .decks
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build public decks into public/talks/slides/
+        run: |
+          cd .decks
+          npm ci
+          npm run build:all          # only visibility:'public' decks → dist/<slug>/
+          cd "$GITHUB_WORKSPACE"
+          mkdir -p public/talks/slides
+          cp -r .decks/dist/* public/talks/slides/
       - name: Install, build, and upload
         uses: withastro/action@v3
         # Defaults: path = repo root, node-version = 20, package manager auto-detected
