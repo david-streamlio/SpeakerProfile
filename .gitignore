@@ -10,6 +10,9 @@ dist/
 # Decks pulled in at build time by CI (from the private david-decks repo)
 public/talks/slides/
 .decks/
+
+# Private content-pipeline catalog (separate private repo, mounted here)
+.pipeline/
 .DS_Store
 npm-debug.log*
 
