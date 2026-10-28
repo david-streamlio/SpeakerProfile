@@ -92,6 +92,14 @@
   slidesUrl: https://streaming-expert.com/talks/slides/pulsar-speaks-english-coc-2026/
   repoUrl: https://github.com/david-streamlio/fleet-trilogy
 
+- id: iceberg-day-coc-2026-glasgow
+  event: Iceberg Day - Community Over Code
+  year: 2026
+  title: "Iceberg V3 Meets the Lakehouse: Row-Level Lineage and Schema Evolution for Streaming Data"
+  location: Glasgow, Scotland, UK
+  slidesUrl: https://streaming-expert.com/talks/slides/iceberg-v3-lineage-coc-2026/
+  repoUrl: https://github.com/david-streamlio/row-level-lineage
+
 - id: current-2023
   event: "Current: The Next Generation of Kafka Summit"
   year: 2023
