@@ -68,6 +68,14 @@
   videoUrl: https://current.confluent.io/london/sessions#session-SESS-98
   slidesUrl: https://streaming-expert.com/talks/slides/context-streams/
 
+- id: community-over-code-2026-glasgow
+  event: Community Over Code
+  year: 2026
+  title: "Edge Intelligence for Connected Fleets: 1-Bit LLMs Inside Apache Pulsar Functions"
+  location: Glasgow, Scotland, UK
+  slidesUrl: https://streaming-expert.com/talks/slides/edge-intelligence-coc-2026/
+  repoUrl: https://github.com/david-streamlio/fleet-trilogy
+
 - id: current-2023
   event: "Current: The Next Generation of Kafka Summit"
   year: 2023
