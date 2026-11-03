@@ -14,29 +14,64 @@ positioning:
     I help engineering teams design streaming systems that react in
     milliseconds — and I make the hard parts make sense, on stage and in code.
 
-# A talk recording to feature on the home page (YouTube watch URL).
-featuredVideo:
-  url: https://www.youtube.com/watch?v=sBbg0ow3hh0
-  title: "Deploying Machine Learning Models with Pulsar Functions — NDC London"
+# Recorded talks shown in the home page "Recent recordings" reel
+# (ids from talks.yaml; YouTube recordings get a thumbnail).
+reel:
+  - berlin-buzzwords-2026
+  - data-streaming-summit-2025
+  - apache-iceberg-bay-area-meetup-2025
 
-# Signature speaking topics (drafted from talk history — edit freely).
+# The talk menu organizers book from (drafted from talk history — edit freely).
+# deliveredAt: ids from talks.yaml where this talk (or its closest version) was given.
+# Optional per talk: formats (e.g. "45-min talk · 3-hr workshop") and level
+# (e.g. "Intermediate") — shown on the card once filled in.
 topics:
   - title: Real-Time, Event-Driven Architecture
     description: >-
       Designing systems that react in milliseconds — event sourcing, broker-side
       filtering, and the patterns that make streaming reliable in production.
+    deliveredAt: [berlin-buzzwords-2026, data-streaming-summit-2025]
   - title: Apache Pulsar in Production
     description: >-
       From core concepts to advanced patterns, drawn from "Pulsar in Action" and
       seven years as a project committer.
+    deliveredAt: [pulsar-summit-europe-2024]
   - title: Cost-Efficient Streaming at Scale
     description: >-
       Cutting the operational overhead and runaway bills of Kafka and Pulsar
       without sacrificing throughput or reliability.
+    deliveredAt: [current-2025, apache-iceberg-bay-area-meetup-2025]
   - title: Streaming Infrastructure for the AI Era
     description: >-
       Turning data pipelines into context streams — feeding real-time, personalized
       data to AI agents and the systems that serve them.
+    deliveredAt: [current-london-2026]
+
+# Third-person bios for event programs and introductions (the "Speaker kit").
+# DRAFT — written from the facts on this site; review before publishing.
+speakerBio:
+  short: >-
+    David Kjerrumgaard is a Developer Advocate at StreamNative and a committer on
+    Apache Pulsar. He is the author of "Pulsar in Action" (Manning) and co-author
+    of "Practical Hive" (Apress). David has spoken at more than 30 conferences,
+    including Current, Berlin Buzzwords, NDC London and Community Over Code, on
+    event-driven architecture, streaming at scale and real-time data for AI.
+  long:
+    - >-
+      David Kjerrumgaard is a Developer Advocate at StreamNative and has been a
+      committer on the Apache Pulsar project for seven years. He works with
+      engineering teams designing streaming systems that react in milliseconds.
+    - >-
+      His work traces back to the early days of the big-data ecosystem, where he
+      helped organizations move from batch processing to edge-to-core streaming
+      analytics, drawing on architectural patterns proven building solutions for
+      Fortune 500 companies.
+    - >-
+      David is the author of "Pulsar in Action" (Manning), a hands-on guide to
+      building event-streaming applications, and co-author of "Practical Hive"
+      (Apress). He has spoken at more than 30 conferences worldwide; his recent
+      talks cover broker-side filtering, streaming data in the Apache Iceberg
+      lakehouse, and the infrastructure behind AI agents.
 
 bio:
   - >-
