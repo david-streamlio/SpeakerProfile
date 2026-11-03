@@ -24,6 +24,10 @@ const videos = defineCollection({
     url: z.string().url().optional(),
     description: z.string().optional(),
     coHost: z.string().optional(),
+    // "short" = short-form clip; "video" = webinar or long-form video.
+    kind: z.enum(["short", "video"]).default("video"),
+    // Publish date. Dated videos appear in the home page "Latest" feed.
+    date: z.coerce.date().optional(),
   }),
 });
 

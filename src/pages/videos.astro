@@ -2,53 +2,100 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHeader from "../components/PageHeader.astro";
 import { getCollection } from "astro:content";
+import { youtubeThumb } from "../lib/youtube";
 
-const videos = await getCollection("videos");
+// Newest first when dated; undated entries keep their file order after them.
+const byDate = <T extends { data: { date?: Date } }>(a: T, b: T) =>
+  (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0);
+
+const all = await getCollection("videos");
+const shorts = all.filter((v) => v.data.kind === "short").sort(byDate);
+const videos = all.filter((v) => v.data.kind !== "short").sort(byDate);
+const podcasts = await getCollection("podcasts");
+
+const isoDay = (d: Date) => d.toISOString().slice(0, 10);
 ---
 
 <BaseLayout
-  title="Videos & Webinars"
-  description="Webinars and technical video content on Apache Pulsar and event streaming."
+  title="Media"
+  description="Short videos, webinars and podcast appearances on Apache Pulsar, event streaming and real-time data."
 >
   <PageHeader
-    eyebrow="Watch"
-    title="Videos & Webinars"
-    description="Deep dives, tutorials, and webinars on Apache Pulsar and event streaming."
+    eyebrow="Watch & listen"
+    title="Media"
+    description="Short videos, deep-dive webinars and podcast conversations on real-time data and streaming systems."
   />
 
-  <section class="mx-auto max-w-4xl px-4 py-12 sm:px-6">
-    <ul class="grid gap-4 sm:grid-cols-2">
+  {
+    shorts.length > 0 && (
+      <section class="mx-auto max-w-5xl px-4 pt-12 sm:px-6">
+        <h2 class="text-2xl">Short videos</h2>
+        <ul class="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-4">
+          {shorts.map((v) => {
+            const thumb = youtubeThumb(v.data.url);
+            return (
+              <li>
+                <a
+                  href={v.data.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group panel h-full"
+                >
+                  {thumb && (
+                    <span class="block aspect-[9/16] overflow-hidden bg-border">
+                      <img src={thumb} alt="" class="h-full w-full object-cover" loading="lazy" />
+                    </span>
+                  )}
+                  <span class="panel-body !p-4 text-sm font-medium group-hover:text-primary">
+                    {v.data.title}
+                  </span>
+                  {v.data.date && (
+                    <span class="panel-meta !mx-4">
+                      <time datetime={v.data.date.toISOString()}>{isoDay(v.data.date)}</time>
+                    </span>
+                  )}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="mx-auto max-w-5xl px-4 pt-12 sm:px-6">
+    <h2 class="text-2xl">Videos & webinars</h2>
+    <ul class="mt-5 grid items-start gap-5 sm:grid-cols-2">
       {
         videos.map((video) => {
-          const card =
-            "group flex h-full items-start gap-3 rounded-xl border border-slate-200 p-4 dark:border-slate-800";
+          const thumb = youtubeThumb(video.data.url);
           const Body = (
-            <span>
-              <span
-                class:list={[
-                  "font-medium",
-                  video.data.url &&
-                    "group-hover:text-accent-600 dark:group-hover:text-accent-400",
-                ]}
-              >
-                {video.data.title}
+            <>
+              {thumb && (
+                <span class="block aspect-video overflow-hidden bg-border">
+                  <img src={thumb} alt="" class="h-full w-full object-cover" loading="lazy" />
+                </span>
+              )}
+              <span class="panel-body">
+                <span
+                  class:list={[
+                    "font-display block text-lg font-semibold",
+                    video.data.url && "group-hover:text-primary",
+                  ]}
+                >
+                  {video.data.title}
+                </span>
+                {video.data.description && (
+                  <span class="mt-1 block text-sm text-muted">{video.data.description}</span>
+                )}
               </span>
-              {video.data.coHost && (
-                <span class="mt-0.5 block text-xs text-slate-500 dark:text-slate-400">
-                  with {video.data.coHost}
-                </span>
-              )}
-              {video.data.description && (
-                <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">
-                  {video.data.description}
-                </span>
-              )}
-              {!video.data.url && (
-                <span class="mt-1 block text-xs text-slate-400 dark:text-slate-500">
-                  Recording coming soon
-                </span>
-              )}
-            </span>
+              <span class="panel-meta">
+                <span class="status-dot" />
+                {video.data.url ? "Video" : "Recording coming soon"}
+                {video.data.coHost && ` · with ${video.data.coHost}`}
+                {video.data.date && ` · ${isoDay(video.data.date)}`}
+              </span>
+            </>
           );
           return (
             <li>
@@ -57,20 +104,42 @@ const videos = await getCollection("videos");
                   href={video.data.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class={`${card} hover:border-accent-400 hover:shadow-md`}
+                  class="group panel"
                 >
-                  <span class="mt-0.5 text-accent-600 dark:text-accent-400">▶</span>
                   {Body}
                 </a>
               ) : (
-                <div class={card}>
-                  <span class="mt-0.5 text-slate-400 dark:text-slate-500">▶</span>
-                  {Body}
-                </div>
+                <div class="panel">{Body}</div>
               )}
             </li>
           );
         })
+      }
+    </ul>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <h2 class="text-2xl">Podcasts</h2>
+      <a href="/podcasts/" class="mono-label text-primary hover:text-secondary">Podcasts page →</a>
+    </div>
+    <ul class="mt-5 grid gap-3 sm:grid-cols-2">
+      {
+        podcasts.map((podcast) => (
+          <li>
+            <a
+              href={podcast.data.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group panel h-full"
+            >
+              <span class="panel-body flex items-start gap-3">
+                <span class="text-primary">🎙</span>
+                <span class="font-medium group-hover:text-primary">{podcast.data.title}</span>
+              </span>
+            </a>
+          </li>
+        ))
       }
     </ul>
   </section>

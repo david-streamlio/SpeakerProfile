@@ -1,5 +1,7 @@
 # Webinars and other video content. Add a new one by copying a block.
-# Fields: id, title, url (optional), description (optional), coHost (optional).
+# Fields: id, title, url (optional), description (optional), coHost (optional),
+#   kind (optional: "short" for short-form clips, default "video"),
+#   date (optional, YYYY-MM-DD — dated videos show in the home page "Latest" feed).
 
 - id: streaming-connect-3-sentiment-analysis
   title: "Streaming Connect #3: Real-Time Social Media Sentiment Analysis Using RisingWave and StreamNative"
