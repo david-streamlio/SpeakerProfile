@@ -74,6 +74,7 @@
   title: "Edge Intelligence for Connected Fleets: 1-Bit LLMs Inside Apache Pulsar Functions"
   location: Glasgow, Scotland, UK
   slidesUrl: https://streaming-expert.com/talks/slides/edge-intelligence-coc-2026/
+  videoUrl: https://www.youtube.com/watch?v=qdlrZCs0B-w
   repoUrl: https://github.com/david-streamlio/fleet-trilogy
 
 - id: community-over-code-2026-glasgow-greenest-token
@@ -90,6 +91,7 @@
   title: "When Your Pulsar Function Speaks English: Inline LLM Inference for Real-Time Stream Enrichment"
   location: Glasgow, Scotland, UK
   slidesUrl: https://streaming-expert.com/talks/slides/pulsar-speaks-english-coc-2026/
+  videoUrl: https://www.youtube.com/watch?v=OuKcAWUZHbo
   repoUrl: https://github.com/david-streamlio/fleet-trilogy
 
 - id: iceberg-day-coc-2026-glasgow
@@ -98,6 +100,7 @@
   title: "Iceberg V3 Meets the Lakehouse: Row-Level Lineage and Schema Evolution for Streaming Data"
   location: Glasgow, Scotland, UK
   slidesUrl: https://streaming-expert.com/talks/slides/iceberg-v3-lineage-coc-2026/
+  videoUrl: https://www.youtube.com/watch?v=BxcBr7PY2wQ
   repoUrl: https://github.com/david-streamlio/row-level-lineage
 
 - id: current-2023
